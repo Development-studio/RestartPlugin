@@ -1,8 +1,15 @@
-что бы перезапустить сервер необходимо ввести в консоли команду "restart" после чего игроки увидят обратный отсчет и сервер перезагрузиться
+# RestartPlugin
 
-так же сервер может автоматичекси перезапускатся (если эта функция вам не нужна просто удалите с 11 по 13 строку). Что бы изменить время перезапуска измените число в 13 строке(подчеркнуто на скрине ниже)
+plugin to auto restart the server
+
+## documentation:
+
+to restart the server, you need to enter the "restart" command in the console, after which the players will see a countdown and the server will restart
+
+the server can also restart automatically (if you don't need this function, just delete line 11 to 13). To change the restart time, change the number in line 13(underlined in the screenshot below)
 
 ![image](https://user-images.githubusercontent.com/59438110/131455402-c8f2087b-d298-43cb-ac51-1e25fe2dbca9.png)
 
+## requirements:
 
-что бы плагин успешно работал необходимо запускать сервер через специальный exe (его вы увидите в папке плагина)
+in order for the plugin to work successfully, you need to run the server through a special exe (you will see it in the plugin folder)
