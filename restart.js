@@ -1,21 +1,19 @@
-//code of sleep function
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-}
-
-mc.regConsoleCmd("restart","restart the server",function(args){
+mc.regConsoleCmd("restart","restart the server",function(){
     log("restart the server through 5 second")
-    var step;
-    for (step = 1; step < 6; step++) {
-        mc.broadcast('restart through', step ,'second');
-        sleep(1000);
-    }
-    mc.runcmdEx("stop")
+    setTimeout(() => { mc.broadcast("restart through 10 second"); }, 2000);
+    setTimeout(() => { mc.broadcast("restart through 9 second"); }, 4000);
+    setTimeout(() => { mc.broadcast("restart through 8 second"); }, 6000);
+    setTimeout(() => { mc.broadcast("restart through 7 second"); }, 8000);
+    setTimeout(() => { mc.broadcast("restart through 6 second"); }, 10000);
+    setTimeout(() => { mc.broadcast("restart through 5 second"); }, 14000);
+    setTimeout(() => { mc.broadcast("restart through 4 second"); }, 16000);
+    setTimeout(() => { mc.broadcast("restart through 3 second"); }, 18000);
+    setTimeout(() => { mc.broadcast("restart through 2 second"); }, 20000);
+    setTimeout(() => { mc.broadcast("restart through 1 second"); }, 22000);
+    setTimeout(() => { mc.broadcast("RESTART!"); }, 24000);
+    setTimeout(() => { mc.runcmdEx("stop") }, 26000);
+
 })
 setInterval(function(){
     mc.runcmdEx("restart")
-}, 60000); //the time after which the server will restart (milliseconds)
+}, 3600000); //the time after which the server will restart (milliseconds)
