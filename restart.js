@@ -1,5 +1,5 @@
 mc.regConsoleCmd("restart","restart the server",function(){
-    log("restart the server through 5 second")
+    log("restart the server through 10 second")
     setTimeout(() => { mc.broadcast("restart through 10 second"); }, 2000);
     setTimeout(() => { mc.broadcast("restart through 9 second"); }, 4000);
     setTimeout(() => { mc.broadcast("restart through 8 second"); }, 6000);
